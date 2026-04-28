@@ -11,7 +11,7 @@ uv sync
 ```
 
 Gemma weights are gated on Hugging Face. Accept the model license for
-`google/gemma-4-E4B-it`, then authenticate:
+`google/gemma-4-E2B-it`, then authenticate:
 
 ```powershell
 Copy-Item .env.example .env
@@ -72,6 +72,4 @@ Use a different prompt for speech understanding:
 uv run python gemma_mic.py --seconds 10 --prompt "Summarize what the speaker is asking for."
 ```
 
-The default Hugging Face model is `google/gemma-4-E4B-it`. The OpenRouter ID
-`google/gemma-3n-e4b-it:free` is text-only in OpenRouter's catalog; raw microphone audio
-uses the local Hugging Face Transformers path instead.
+The default Hugging Face model is `google/gemma-4-E2B-it`.

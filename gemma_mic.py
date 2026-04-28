@@ -15,7 +15,7 @@ from scipy.io import wavfile
 from transformers import AutoModelForMultimodalLM, AutoProcessor
 
 
-DEFAULT_MODEL_ID = "google/gemma-4-E4B-it"
+DEFAULT_MODEL_ID = "google/gemma-4-E2B-it"
 SAMPLE_RATE = 16_000
 MAX_AUDIO_SECONDS = 30.0
 DEFAULT_BLOCK_SECONDS = 0.5
