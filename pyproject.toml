@@ -1,0 +1,28 @@
+[project]
+name = "audio-input-gemma"
+version = "0.1.0"
+description = "Local microphone test for audio-capable Gemma models"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=0.31.0",
+    "librosa>=0.10.0",
+    "numpy>=1.26.0",
+    "python-dotenv>=1.0.1",
+    "scipy>=1.11.0",
+    "sounddevice>=0.4.6",
+    "torch",
+    "torchaudio",
+    "torchvision",
+    "timm",
+    "transformers>=4.53.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
